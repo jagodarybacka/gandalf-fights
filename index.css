@@ -1,0 +1,262 @@
+html {
+  background: #F5EFED;
+}
+.box {
+  position: absolute;;
+  margin: auto;
+  display: block;
+  width: 300px;
+  height: 300px;
+  background: none;
+}
+
+/*
+Gandalf colors:
+d. grey #1C2033;
+grey #1D3650;
+red #F06449;
+light grey #D8DBE2;
+white #FFFFF4;
+*/
+
+/*  Hat  */
+.gandalf .hat > *{
+  z-index: 4;
+}
+
+.gandalf .hat-top {
+  position: absolute;
+  display: block;
+  top: 8%;
+  left: 40%;
+  width: 20%;
+  height: 25%;
+  background: #1D3650;
+  border-radius: 100% 5% 0% 0%;
+}
+
+.gandalf .hat-bottom {
+  position: absolute;
+  display: block;
+  top: 28%;
+  left: 35%;
+  width: 30%;
+  height: 10%;
+  background: #1D3650;
+  border-radius: 100%;
+}
+
+/*  Face  */
+.gandalf .face > *{
+  z-index: 3;
+}
+.gandalf .beard {
+  position: absolute;
+  display: block;
+  top: 35%;
+  left: 39%;
+  width: 22%;
+  height: 25%;
+  background: #D8DBE2;
+  border-radius: 0% 0% 100% 10%;
+  z-index: 2;
+}
+
+.gandalf .eye {
+  position: absolute;
+  display: block;
+  top: 39%;
+  width: 2%;
+  height: 2%;
+  background: #1C2033;
+  border-radius: 100% ;
+}
+
+.gandalf .eye.left {
+  left: 45%;
+}
+
+.gandalf .eye.right {
+  left: 52%;
+}
+
+.gandalf .mouth {
+  position: absolute;
+  display: block;
+  top: 40%;
+  left: 48%;
+  width: 3%;
+  height: 1%;
+  background: #1C2033;
+  border-radius: 25% ;
+}
+
+/*  Body  */
+
+.gandalf .torso {
+  position: absolute;
+  display: block;
+  top: 40%;
+  left: 35%;
+  width: 30%;
+  height: 30%;
+  background: #1C2033;
+  border-radius: 25% ;
+  /*z-index: 2;*/
+}
+.gandalf .belt {
+  position: absolute;
+  display: block;
+  top: 63%;
+  left: 35%;
+  width: 30%;
+  height: 0.5%;
+  background: #F06449;
+  z-index: 2;
+}
+.gandalf .foot {
+  position: absolute;
+  display: block;
+  top: 67%;
+  width: 3%;
+  height: 3%;
+  background: #F06449;
+  z-index: 2;
+}
+.gandalf .foot.left {
+  border-radius: 40% 25% 0% 0%;
+  left: 42%;
+}
+.gandalf .foot.right {
+  border-radius: 25% 40% 0% 0%;
+  left: 55%;
+}
+
+.gandalf .hand {
+  position: absolute;
+  display: block;
+  top: 47%;
+  width: 4%;
+  height: 4%;
+  background: #F06449;
+}
+.gandalf .hand.left {
+  border-radius: 25% 0% 0% 40%;
+  left: 31%;
+}
+.gandalf .hand.right {
+  border-radius: 0% 25% 40% 0%;
+  left: 65%;
+}
+
+.gandalf .wand {
+  position: absolute;
+  display: block;
+  top: 20%;
+  left: 67%;
+  width: 1.5%;
+  height: 40%;
+  background: #D8DBE2;
+  border-top: solid 10px #F06449;
+  z-index: -1
+}
+
+.gandalf .shadow {
+  position: absolute;
+  display: block;
+  top: 65%;
+  left: 25%;
+  width: 50%;
+  height: 10%;
+  border-radius: 100%;
+  background: #D6D5C9;
+  z-index: -1;
+}
+
+
+/*  Sauron  */
+
+.sauron .tower {
+  position: absolute;
+  display: block;
+  top: 30%;
+  left: 35%;
+  width: 30%;
+  height: 60%;
+  -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+  background: #06151F;
+}
+
+.sauron .door {
+  position: absolute;
+  display: block;
+  top: 84%;
+  left: 52%;
+  width: 5%;
+  height: 6%;
+  border-radius: 100% 100% 0 0;
+  background: #0C2D44;
+}
+
+.sauron .top {
+  position: absolute;
+  display: block;
+  top: 30%;
+  left: 38%;
+  width: 24%;
+  height: 5%;
+  background: #06151F;
+}
+
+.sauron .eye {
+  position: absolute;
+  display: block;
+  top: 9%;
+  left: 39%;
+  width: 22%;
+  height: 22%;
+  border-radius: 75% 0%;
+  background: #FCC111;
+  transform: rotate(45deg);
+}
+
+.sauron .pupil {
+  position: absolute;
+  display: block;
+  top: 12.5%;
+  left: 48.5%;
+  width: 3%;
+  height: 15%;
+  border-radius: 100% 100%;
+  background: #06151F;
+  transform: rotate(0deg);
+}
+
+.sauron .shadow {
+  position: absolute;
+  display: block;
+  top: 85%;
+  left: 25%;
+  width: 50%;
+  height: 10%;
+  border-radius: 100%;
+  background: #D6D5C9;
+  z-index: -1;
+}
+
+
+
+
+/*  Custom scene  */
+
+.sauron {
+  width: 500px;
+  height: 500px;
+  right: 0;
+  bottom: 0;
+}
+
+.gandalf {
+  bottom: 0;
+}
