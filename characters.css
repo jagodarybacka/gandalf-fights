@@ -14,7 +14,7 @@ html {
 Gandalf colors:
 d. grey #1C2033;
 grey #1D3650;
-red #F06449;
+red #F0D1B2;
 light grey #D8DBE2;
 white #FFFFF4;
 */
@@ -31,7 +31,7 @@ white #FFFFF4;
   left: 40%;
   width: 20%;
   height: 25%;
-  background: #1D3650;
+  background: #939393;
   border-radius: 100% 5% 0% 0%;
 }
 
@@ -42,7 +42,7 @@ white #FFFFF4;
   left: 35%;
   width: 30%;
   height: 10%;
-  background: #1D3650;
+  background: #939393;
   border-radius: 100%;
 }
 
@@ -100,7 +100,7 @@ white #FFFFF4;
   left: 35%;
   width: 30%;
   height: 30%;
-  background: #1C2033;
+  background: #939393;
   border-radius: 25% ;
   /*z-index: 2;*/
 }
@@ -111,7 +111,7 @@ white #FFFFF4;
   left: 35%;
   width: 30%;
   height: 0.5%;
-  background: #F06449;
+  background: #494949;
   z-index: 2;
 }
 .gandalf .foot {
@@ -120,7 +120,7 @@ white #FFFFF4;
   top: 67%;
   width: 3%;
   height: 3%;
-  background: #F06449;
+  background: #494949;
   z-index: 2;
 }
 .gandalf .foot.left {
@@ -138,7 +138,7 @@ white #FFFFF4;
   top: 47%;
   width: 4%;
   height: 4%;
-  background: #F06449;
+  background: #F0D1B2;
 }
 .gandalf .hand.left {
   border-radius: 25% 0% 0% 40%;
@@ -157,7 +157,7 @@ white #FFFFF4;
   width: 1.5%;
   height: 40%;
   background: #D8DBE2;
-  border-top: solid 10px #F06449;
+  border-top: solid 10px #494949;
   z-index: -1
 }
 
@@ -187,6 +187,40 @@ white #FFFFF4;
   clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
   background: #06151F;
 }
+
+.sauron .spike {
+  position: absolute;
+  display: block;
+  top: 0%;
+  left: 0%;
+  width: 5%;
+  height: 20%;
+  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  background: #06151F;
+}
+
+.sauron .spike.up { top: 15%;  }
+
+.sauron .spike.mid { top: 40%; }
+
+.sauron .spike.down { top: 70%; }
+
+.sauron .spike.up.left { left: 32%; }
+
+.sauron .spike.mid.left { left: 31%; }
+
+.sauron .spike.down.left { left: 29%; }
+
+.sauron .spike.up.right { left: 63%; }
+
+.sauron .spike.mid.right { left: 64%; }
+
+.sauron .spike.down.right { left: 66%; }
+
+.sauron .spike.left { transform: rotate(-40deg); }
+
+.sauron .spike.right { transform: rotate(40deg); }
 
 .sauron .door {
   position: absolute;
@@ -221,6 +255,12 @@ white #FFFFF4;
   transform: rotate(45deg);
 }
 
+.sauron .eye.attack {
+  box-sizing: border-box;
+  border: 13px solid #ED0000;
+  background: #F97D2F;
+}
+
 .sauron .pupil {
   position: absolute;
   display: block;
@@ -251,12 +291,13 @@ white #FFFFF4;
 /*  Custom scene  */
 
 .sauron {
-  width: 500px;
-  height: 500px;
+  width: 600px;
+  height: 600px;
   right: 0;
-  bottom: 0;
+  bottom: 3%;
 }
 
 .gandalf {
-  bottom: 0;
+  left: 4%;
+  bottom: 2%;
 }
