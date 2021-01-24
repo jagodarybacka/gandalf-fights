@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/gandalf-fights/static/css/main.4fe5ef2a.chunk.css",
+    "main.js": "/gandalf-fights/static/js/main.10802e8e.chunk.js",
+    "main.js.map": "/gandalf-fights/static/js/main.10802e8e.chunk.js.map",
+    "runtime-main.js": "/gandalf-fights/static/js/runtime-main.e84a2400.js",
+    "runtime-main.js.map": "/gandalf-fights/static/js/runtime-main.e84a2400.js.map",
+    "static/js/2.6b52d2c5.chunk.js": "/gandalf-fights/static/js/2.6b52d2c5.chunk.js",
+    "static/js/2.6b52d2c5.chunk.js.map": "/gandalf-fights/static/js/2.6b52d2c5.chunk.js.map",
+    "static/js/3.e2624c7d.chunk.js": "/gandalf-fights/static/js/3.e2624c7d.chunk.js",
+    "static/js/3.e2624c7d.chunk.js.map": "/gandalf-fights/static/js/3.e2624c7d.chunk.js.map",
+    "index.html": "/gandalf-fights/index.html",
+    "static/css/main.4fe5ef2a.chunk.css.map": "/gandalf-fights/static/css/main.4fe5ef2a.chunk.css.map",
+    "static/js/2.6b52d2c5.chunk.js.LICENSE.txt": "/gandalf-fights/static/js/2.6b52d2c5.chunk.js.LICENSE.txt",
+    "static/media/gandalf.d1de5476.svg": "/gandalf-fights/static/media/gandalf.d1de5476.svg",
+    "static/media/sauron.fad6a9e5.svg": "/gandalf-fights/static/media/sauron.fad6a9e5.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e84a2400.js",
+    "static/js/2.6b52d2c5.chunk.js",
+    "static/css/main.4fe5ef2a.chunk.css",
+    "static/js/main.10802e8e.chunk.js"
+  ]
+}
