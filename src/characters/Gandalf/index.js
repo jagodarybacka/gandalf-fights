@@ -1,10 +1,13 @@
 import { ReactComponent as GandalfSvg } from './gandalf.svg';
+import provideInterface from '../provideInterface';
 import './styles.scss';
 
-export default function Gandalf() {
+function Gandalf() {
   return (
     <div className="Gandalf">
       <GandalfSvg />
     </div>
   );
 }
+
+export default provideInterface(Gandalf);
