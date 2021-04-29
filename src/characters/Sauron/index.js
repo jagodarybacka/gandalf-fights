@@ -1,5 +1,6 @@
 import { ReactComponent as SauronSvg } from './sauron.svg';
 import provideInterface from '../provideInterface';
+import { ID } from 'consts';
 import './styles.scss';
 
 function Sauron(props) {
@@ -11,4 +12,4 @@ function Sauron(props) {
   );
 }
 
-export default provideInterface(Sauron);
+export default provideInterface(Sauron, ID.SAURON);

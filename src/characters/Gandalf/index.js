@@ -1,5 +1,6 @@
 import { ReactComponent as GandalfSvg } from './gandalf.svg';
 import provideInterface from '../provideInterface';
+import { ID } from 'consts';
 import './styles.scss';
 
 function Gandalf(props) {
@@ -11,4 +12,4 @@ function Gandalf(props) {
   );
 }
 
-export default provideInterface(Gandalf);
+export default provideInterface(Gandalf, ID.GANDALF);

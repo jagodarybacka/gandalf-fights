@@ -1,13 +1,13 @@
-import { ATTACK } from 'consts';
+import { ATTACK, ATTACK_ALIAS } from 'consts';
 import './styles.scss';
 
-const provideInterface = CharacterComponent => props => {
+const provideInterface = (CharacterComponent, id) => props => {
   const attackList = Object.entries(ATTACK).map(([ name, type ] ) => (
     <div
       className="Character__attack"
       key={name}
       onClick={() => props.use(type)}>
-      {name}
+      {ATTACK_ALIAS[id][type]}
     </div>
   ));
   const interfaceElements = (

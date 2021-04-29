@@ -1,5 +1,6 @@
 import Gandalf from './characters/Gandalf';
 import Sauron from './characters/Sauron';
+import { ATTACK_ALIAS } from './consts';
 import { useState, useEffect } from 'react';
 import { getAttackEffects, getWinnerName, keepInRange } from './utils';
 import './App.scss';
@@ -40,13 +41,14 @@ function App() {
     <div>{getWinnerName(gandalfHp, sauronHp)}</div>
   ) : (
     <>
-      <div>Gandalf attacks with {chosenAttacks.gandalf ?? 'nothing'}</div>
-      <div>Sauron attacks with {chosenAttacks.sauron ?? 'nothing'}</div>
+      <div>Gandalf attacks with {ATTACK_ALIAS.gandalf[chosenAttacks.gandalf] ?? 'nothing'}</div>
+      <div>Sauron attacks with {ATTACK_ALIAS.sauron[chosenAttacks.sauron] ?? 'nothing'}</div>
     </>
   );
 
   return (
     <div className="App">
+      <header>Gandalf fights Sauron</header>
       { infoSection }
       <Gandalf
         health={gandalfHp}

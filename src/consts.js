@@ -1,3 +1,7 @@
+export const ID = {
+  GANDALF: 'gandalf',
+  SAURON: 'sauron'
+};
 export const ATTACK = {
   ROCK: 'ATTACK_ROCK',
   PAPER: 'ATTACK_PAPER',
@@ -20,4 +24,23 @@ export const ATTACK_POINTS = {
   [ATTACK.SCISSORS]: 20,
   [ATTACK.LIZARD]: 15,
   [ATTACK.SPOCK]: 10
+};
+
+const ALIASES_GANDALF = {
+  [ATTACK.ROCK]: 'Hobbit',
+  [ATTACK.PAPER]: 'Magic',
+  [ATTACK.SCISSORS]: 'Eagle',
+  [ATTACK.LIZARD]: 'Elfs',
+  [ATTACK.SPOCK]: 'Friendship'
+};
+const ALIASES_SAURON = {
+  [ATTACK.ROCK]: 'Ring',
+  [ATTACK.PAPER]: 'Ghosts',
+  [ATTACK.SCISSORS]: 'Orks',
+  [ATTACK.LIZARD]: 'Smaug',
+  [ATTACK.SPOCK]: 'Darkness'
+};
+export const ATTACK_ALIAS = {
+  [ID.GANDALF]: ALIASES_GANDALF,
+  [ID.SAURON]: ALIASES_SAURON
 };
